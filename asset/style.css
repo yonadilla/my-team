@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=PT+Serif&family=Poppins&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  background: #fafafa;
+  margin: 0 1.5rem;
+}
+
+.nav-1 {
+  margin-top: 3rem;
+  font-family: "PT Serif";
+  font-weight: 700;
+  font-size: 2.25rem;
+  letter-spacing: -0.045em;
+}
+.nav-2 {
+  margin-top: 2.5rem;
+}
+.nav-2 .p1 {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  /* identical to box height */
+  text-transform: uppercase;
+}
+
+.nav-2 .p2 {
+  width: 333px;
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 14px;
+  margin-top: 0px;
+
+  color: #000000;
+}
+.hero {
+  padding: 0;
+  margin: 3rem auto 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.card {
+  width: 10rem;
+  position: relative;
+}
+.card img {
+  width: 8rem;
+}
+
+.card .name {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.card .job {
+  position: absolute;
+  font-family: "PT Serif";
+  font-weight: 400;
+  font-size: 0.725rem;
+  top: 0;
+  right: 0;
+  text-transform: uppercase;
+  writing-mode: vertical-rl;
+  -webkit-writing-mode: vertical-rl;
+  -ms-writing-mode: vertical-rl;
+}
+.card:nth-child(even) {
+  margin-top: 2rem;
+}
+footer {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
+
+  text-align: center;
+
+  color: #a9a9a9;
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    position: relative;
+    width: 60rem;
+    top: 0.5rem;
+    margin: 0px auto;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .nav-2 {
+    margin-right: 7.5rem;
+  }
+  .card:nth-child(3n + 2) {
+    margin-top: 4rem;
+  }
+}
